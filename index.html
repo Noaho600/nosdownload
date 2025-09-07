@@ -4,110 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>N-OS Download</title>
-  <style>
-    :root {
-      --primary: #009688; /* teal */
-      --accent: #ffcc00; /* yellow */
-      --bg: #f9f9f9;
-      --text: #222;
-    }
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: var(--primary);
-      color: white;
-      padding: 1.2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    nav {
-      margin-top: 0.5rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-    }
-    .hero {
-      text-align: center;
-      padding: 3rem 1rem;
-      background: white;
-    }
-    .hero h2 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.1rem;
-      color: #555;
-    }
-    .download-buttons {
-      margin-top: 2rem;
-    }
-    .btn {
-      display: inline-block;
-      padding: 1rem 2rem;
-      margin: 0.5rem;
-      border-radius: 8px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      text-decoration: none;
-      color: white;
-      transition: 0.2s ease;
-    }
-    .btn-primary {
-      background: var(--primary);
-    }
-    .btn-primary:hover {
-      background: #00796b;
-    }
-    .btn-accent {
-      background: var(--accent);
-      color: #222;
-    }
-    .btn-accent:hover {
-      background: #e6b800;
-    }
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>N-OS</h1>
+  <header class="navbar">
+    <div class="logo">N-OS</div>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Features</a>
-      <a href="#">Docs</a>
-      <a href="#">Download</a>
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="docs.html">Docs</a>
+      <a href="download.html" class="active">Download</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Download N-OS</h2>
-    <p>The modern, fast, and simple desktop operating system.</p>
-    <div class="download-buttons">
-      <a href="downloads/N-OS-latest.iso" class="btn btn-primary">⬇ Download ISO</a>
-      <a href="downloads/N-OS-installer.exe" class="btn btn-accent">⬇ Windows Installer</a>
+    <div class="hero-content">
+      <h1>Get N-OS</h1>
+      <p>A modern, fast, and user-friendly operating system.</p>
+      <div class="download-buttons">
+        <a href="downloads/N-OS-latest.iso" class="btn primary">⬇ Download ISO</a>
+        <a href="downloads/N-OS-installer.exe" class="btn accent">⬇ Windows Installer</a>
+      </div>
+    </div>
+    <div class="hero-illustration">
+      <img src="assets/laptop.png" alt="N-OS Screenshot">
+    </div>
+  </section>
+
+  <section class="info-cards">
+    <div class="card">
+      <h3>⚡ Fast</h3>
+      <p>Boots in seconds and runs smoothly on any device.</p>
+    </div>
+    <div class="card">
+      <h3>🎨 Modern</h3>
+      <p>Rounded icons, clean UI, teal & yellow theme.</p>
+    </div>
+    <div class="card">
+      <h3>🔒 Secure</h3>
+      <p>Safe browsing, automatic updates, sandboxed apps.</p>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 N-OS. All Rights Reserved.</p>
+    <p>© 2025 N-OS Project. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
